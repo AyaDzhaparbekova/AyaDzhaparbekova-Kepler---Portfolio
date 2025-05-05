@@ -1,7 +1,93 @@
+@media (max-width: 375px) {
+  h1 {
+    font-size: 24px;
+    padding-top: 60px;
+  }
+
+  h2 {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .my-photo img {
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    top: auto;
+    bottom: 15px;
+  }
+
+  .navbar button {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .about-container {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .experience-container {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .experience-box {
+    max-width: 90%;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .project-img {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  .projects-flex {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-container {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+ 
+}
+
 
 @media (max-width: 767px) {
   main {
-  min-height: 100%;
+  height: 95%;
   max-width: 100%;
   }
 .navbar { 
@@ -13,9 +99,6 @@
   padding: 8px 15px;
   font-size: 0.87rem;
   margin: 5px 3px;
-  }
-.arrow { 
-  display: none;
   }
 
 .my-photo img {
@@ -40,6 +123,9 @@ h2 {
 .projects-container {
   height: none;
 }
+.projects-flex{
+  flex-direction:column;
+}
 .project-img{
   max-width: 90%;
   margin: 20px ;
@@ -47,12 +133,18 @@ h2 {
 
 .main-about.flex  {
   margin: auto;
+  flex-direction: column;
 }
-
-.experience-box {
+.experience-container {
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  }
+  .experience-box {
   max-width: 90%;
   }
-.skills-grid {  
+  .skills-grid {  
   margin: 0 20px;
   align-items: center;
   }
