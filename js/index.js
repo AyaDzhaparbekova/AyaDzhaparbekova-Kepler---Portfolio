@@ -36,13 +36,13 @@ themLi.classList.add('theme-toggle-item');
 const themeToggle = document.createElement('button');
 themeToggle.id = 'themeToggle';
 themeToggle.title = 'Toggle Theme';
-themeToggle.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+themeToggle.innerHTML = '<span class="theme"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i></span>';
 
-themLi.appendChild(themeToggle);
+themeLi.appendChild(themeToggle);
 
-nav.append(themLi);
+nav.appendChild(themeLi);
 
-nav.addEventListener('click', () => {
+themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-theme');
 });
 

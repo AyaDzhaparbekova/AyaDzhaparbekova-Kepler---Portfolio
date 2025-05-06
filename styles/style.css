@@ -114,13 +114,13 @@ h3 {
 .navbar button:active{
   background-color: rgb(2, 87, 107);
 }
-#nav ul{
+.nav-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-  .theme-toggle-item button {
+.theme-toggle-item button {
   background-color: none;
   border: none;
   cursor: pointer;
@@ -130,6 +130,10 @@ h3 {
   font-family: 'Quicksand',sans-serif;
 
 } 
+.dark-theme .aboutMe {
+  background-color: #1c283f;
+  color: #f2f2f2;
+}
 .experience-section {
   background-color: #a6b7c2;
   color: rgb(63, 60, 60);
