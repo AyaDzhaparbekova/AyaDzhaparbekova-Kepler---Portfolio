@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <title>Aya's Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="./styles/media.css" />
   </head>
   <!--GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,49 +12,57 @@
     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
     rel="stylesheet"
   />
-
+  <!-- FONTAWESOME -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
-
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="./styles/media.css" />
   <body>
     <main>
-      <section class="aboutMe">
+      <section id="aboutMe" class="container">
         <h1>Frontend Developer & UI/UX Designer</h1>
-        <h2>About me</h2><h3>Aya Dzhaparbekova</h3>
         <div class="main-about-flex">
           <div class="my-photo">
             <img src="img/myphoto.jpeg" alt="My photo" />
-             
           </div>
-          <div class="about" id="hero">
-            <div class="about-container">
-              <p>
-                I'm a web developer passionate about building reliable and
-                scalable sofware solutions. Proficient in JavaScript, HTML andd
-                CSS, and familiar with modern frameworks and tools. Experienced
-                in working with Git, version control workflow and collaborative
-                development practices. Constantly learning adapting to new
-                technologies to write clean, maintainable code and deliver
-                high-quality results.
-              </p>
-            </div>
+          <div class="about-container">
+            <h2>About me</h2>
+            <h3>Aya Dzhaparbekova</h3>
+            <p>
+              I'm a web developer passionate about building reliable and
+              scalable sofware solutions. Proficient in JavaScript, HTML andd
+              CSS, and familiar with modern frameworks and tools. Experienced in
+              working with Git, version control workflow and collaborative
+              development practices. Constantly learning adapting to new
+              technologies to write clean, maintainable code and deliver
+              high-quality results.
+            </p>
           </div>
         </div>
       </section>
-
       <nav class="navbar">
-        <div class="list flex">
-          <button a href="#about">About</button>
-          <button class="nav">Experience</button>
-          <button class="nav">Projects</button>
-          <button class="nav">Skills</button>
-          <button class="nav">Contacts</button>
-        </div>
+        <ul>
+          <li>
+            <button><a href="#aboutMe">About</a></button>
+          </li>
+<li>
+            <button><a href="#experience">Experience</a></button>
+          </li>
+          <li>
+            <button><a href="#skills">Skills</a></button>
+          </li>
+          <li>
+             <button><a href="#projects">Projects</a></button>
+          </li>
+          <li>
+            <button><a href="#connect">Contacts</a></button>
+          </li>
+        </ul>
       </nav>
 
-      <section class="experience-section">
+      <section id="experience" class="container">
         <h2>Experience</h2>
         <div class="experience-container">
           <div class="experience-box">
@@ -70,8 +76,8 @@
           <div class="experience-box">
             <h3>Personal Projects</h3>
             <p>
-              Built full-page application for parents to track kid's growth
-              using GitHub, JavaScript, REST APIs and Responsive Design.
+              Built full-page API project with Marvel characters using GitHub,
+              JavaScript, REST APIs and Responsive Design.
             </p>
           </div>
           <div class="experience-box">
@@ -83,56 +89,61 @@
           </div>
         </div>
       </section>
-        <section id="skills">
-            <h2>My skills</h2>
-            <ul></ul>
-        </section>
+      <section id="skills" class="container">
+        <h2>My skills</h2>
+        <ul class="skills-list"></ul>
+      </section>
       <section class="projects">
-        <div class="projects-container">
+        <div id="projects" class="container">
           <h2>Projects</h2>
           <div class="projects-flex">
             <div class="project-image"></div>
             <div class="projects-list">
               <img class="project-img" src="img/project.jpg" alt="project1" />
             </div>
-            <div class="a-container">
-              <li>My HTML Project</li>
-              <li>My CSS Project</li>
-              <li>My JavaScript Project</li>
+            <div class="a-container container">
+              <li><a href="https://github.com/AyaDzhaparbekova/AyaPortfolio/blob/main/index.html" target="_blank"> HTML Project</a></li>
+              <li><a href="https://github.com/AyaDzhaparbekova/AyaPortfolio/blob/main/styles/style.css" target="_blank">My CSS Project</a></li>
+              <li><a href="https://github.com/AyaDzhaparbekova/AyaPortfolio/tree/main/js" target="_blank">My JavaScript Project</a></li>
               <li>My API Project</li>
-              <li>My Responsive Design Project</li>
+              <li><a href="https://github.com/AyaDzhaparbekova/AyaPortfolio/blob/main/styles/media.css" target="_blank">My Responsive Design Project</a></li>
             </div>
           </div>
         </div>
       </section>
-      <section class="connect">
-          <h2>Connect</h2>
-          <!-- <div class="connect-socials">
-            <a href="https://www.linkedin.com/in/aya-dzhaparbekova-27b5902a1/">
-              <i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/AyaDzhaparbekova"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://mail.google.com/mail/u/0/#inbox"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-          </div> -->
-      </section>
     </main>
+    <section id="messages" class="container">
+     <h2>Leave a Message</h2> 
+     <form name="leave_message">
+            <label for="usersName">Name:</label>
+            <input type="text" id="usersName" name="usersName" required>
+            <br>
+
+            <label for="usersEmail">Email:</label>
+            <input type="email" id="usersEmail" name="usersEmail" required>
+            <br>
+
+            <label for="usersMessage">Message:</label>
+            <textarea id="usersMessage" name="usersMessage" required></textarea>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="confirmation" style="display:none; color: rgba(20, 95, 118, 0.474);">Thank you! Your message has been sent.</p>
+    </section>
     <footer>
-      <div class="footer-socials">
+      <h2>Contacts</h2>
+      <div class="connect-socials">
         <a href="https://www.linkedin.com/in/aya-dzhaparbekova-27b5902a1/">
           <i class="fa-brands fa-linkedin"></i
         ></a>
         <a href="https://github.com/AyaDzhaparbekova"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://mail.google.com/mail/u/0/#inbox"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
       </div>
-    
     </footer>
     <script src="js/index.js"></script>
   </body>
