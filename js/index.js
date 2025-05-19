@@ -3,7 +3,7 @@ const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector('footer');
 const copyright = document.createElement('p');
-copyright.innerHTML = `&copy; ${thisYear} Designed & Coded by Aya Dzhaparbekova. Let's build something great together.`;
+copyright.innerHTML = `&copy; ${thisYear} Designed & Coded by Aya Dzhaparbekova.`;
 footer.appendChild(copyright);
 
 //skills section using DOM manipulation
@@ -12,11 +12,9 @@ const skills = [
   'CSS',
   'JavaScript',
   'GitHub',
-  'Responsive Design',
   'UX/UI Design',
   'DOM',
-  'REST API',
-  'Flexbox',
+  'REST API'
 ];
 
 const skillsSection = document.getElementById('skills');
@@ -28,7 +26,7 @@ for (let i = 0; i < skills.length; i++) {
   skill.innerText = skills[i];
   skillsList.appendChild(skill);
 }
-//dark mode toggle button 
+//dark mode toggle button
 
 const nav = document.querySelector('nav ul');
 
@@ -54,48 +52,69 @@ themeToggle.addEventListener('click', () => {
   }
 });
 
-// connect leave message chat bot
+// leave message section
+const messageForm = document.forms['leave_message'];
 
-const messageForm = document.form['leave_message'];
+messageForm.addEventListener('submit', handleSubmit);
 
-if (messageForm) {
-  messageForm.addEventListener('submit', function(event) {
-    event.preventDefault();
+function handleSubmit(event) {
+  event.preventDefault();
+  const name = event.target.usersName.value;
+  const email = event.target.email.value;
+  const message = event.target.usersMessage.value;
+  console.log(name, email, message);
 
-    const usersName = event.target.usersName.value;
-    const usersEmail = event.target.usersEmail.value;
-    const usersMessage = event.target.usersMessage.value;
+  const messageSection = document.getElementById('messages');
+  const messageList = messageSection.querySelector('ul');
+  const newMessage = document.createElement('li');
+  newMessage.innerHTML = `<a href="mailto:${email}">${name}</a>
+                          <span>: ${message}</span>`;
 
-    console.log(usersName, usersEmail, usersMessage);
+  const removeButton = document.createElement('button');
+  removeButton.innerText = 'remove';
+  removeButton.setAttribute('type', 'button');
+  removeButton.classList.add('remove-button'); 
+  removeButton.addEventListener('click', handleRemoveButton);
 
-    const messageSection = document.getElementById('messages');
-    const messageList = messageSection.querySelector('ul');
+  function handleRemoveButton() {
+    const entry = removeButton.parentNode;
+    entry.remove();
+  }
 
-    const newMessage = document.createElement('ul');
-    newMessage.innerHTML = `
-        <a href="mailto:${usersEmail}">${usersName}</a>
-        <span>: ${usersMessage}</span>`;
+  newMessage.appendChild(removeButton);
+  messageList.appendChild(newMessage);
 
-    const removeButton = document.createElement('button');
-    removeButton.innerText = 'remove';
-    removeButton.type = 'button';
+  const confirmationMessage = document.getElementById('confirmation');
+  confirmationMessage.style.display = 'block';
 
-    removeButton.addEventListener('click', function() {
-        const entry = removeButton.parentNode;
-        entry.remove();
-    });
-    newMessage.appendChild(removeButton);
-        messageList.appendChild(newMessage);
-      });
+  messageForm.reset();
+}
+
+//Fetch API Projects Section
+
+const projectSection = document.getElementById('projects');
+const projectList = projectSection.querySelector('ul');
+
+fetch('https://api.github.com/users/AyaDzhaparbekova/repos')
+  .then(res => {
+    return res.json();
+  })
+  .then(repositories => {
+    console.log('repositories: ', repositories);
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = repositories[i].name;
+      const repoURL = repositories[i].html_url;
+
+      const li = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = repoURL;
+      link.innerHTML = project;
+      link.target = '_blank';
+      li.appendChild(link);
+      projectList.appendChild(li);
     }
-    messageList.appendChild(newMessage);
-
-
-
-
-
-
-
-
-
-
+  })
+  .catch(error => {
+    console.error('An error occurred:', error);
+  });  

@@ -28,8 +28,7 @@
             <img src="img/myphoto.jpeg" alt="My photo" />
           </div>
           <div class="about-container">
-            <h2>About me</h2>
-            <h3>Aya Dzhaparbekova</h3>
+            <h2>Aya Dzhaparbekova</h2>
             <p>
               I'm a web developer passionate about building reliable and
               scalable sofware solutions. Proficient in JavaScript, HTML andd
@@ -39,6 +38,10 @@
               technologies to write clean, maintainable code and deliver
               high-quality results.
             </p>
+            <p>
+              Driven by a passion for discovering new programming languages and
+              continiously growing in the tech industry.
+            </p>
           </div>
         </div>
       </section>
@@ -47,17 +50,17 @@
           <li>
             <button><a href="#aboutMe">About</a></button>
           </li>
-<li>
+          <li>
             <button><a href="#experience">Experience</a></button>
           </li>
           <li>
             <button><a href="#skills">Skills</a></button>
           </li>
           <li>
-             <button><a href="#projects">Projects</a></button>
+            <button><a href="#projects">Projects</a></button>
           </li>
           <li>
-            <button><a href="#connect">Contacts</a></button>
+            <button><a href="#messages">Contacts</a></button>
           </li>
         </ul>
       </nav>
@@ -66,25 +69,34 @@
         <h2>Experience</h2>
         <div class="experience-container">
           <div class="experience-box">
-            <h3>Web Developer</h3>
+            <h3>Teacher Coordinator - LSLC (2013-2016)</h3>
             <p>
-              Created responsive websites using HTML, CSS, JavaScript,
-              integrated APIs and optimized user experience for mobile and
-              desktop platforms.
+              Created and managed class schedules for multiple levels and
+              instructions.Collaborated with educaters to ensure curriculum
+              alignment and student progress. Developed teaching methodology and
+              structured learning programs.
             </p>
           </div>
           <div class="experience-box">
-            <h3>Personal Projects</h3>
+            <h3>Automotive Sales Agent (Wholesale) (2017-2019)</h3>
             <p>
-              Built full-page API project with Marvel characters using GitHub,
-              JavaScript, REST APIs and Responsive Design.
+              Managed the full acquisition process - from bidding and purchasing
+              to inspection and transportation. Analyzed pricing trends and
+              vehicle conditions to make profitable purchasing decisions. Built
+              and maintained relationship with dealerships to negotiate sales
+              and secure repeat business.
             </p>
           </div>
           <div class="experience-box">
-            <h3>Open Source Contributor</h3>
+            <h3>Automotive Sales Team Supervisor (2020-2023)</h3>
             <p>
-              Contributed to open source projects on GitHub. Worked with version
-              control, issue tracking, and collaborative development.
+              Led and motivated a team of sales representatives to achieve and
+              exceed monthly sales targets.Provided training, coaching and
+              performance feedback to improve team efficiency and product
+              knoledge.Ensured high levels of customer satisfaction through
+              strong communication and follow up processes. Analyzed market
+              trends and competitor activity to adjust sales tactics
+              accordingly.
             </p>
           </div>
         </div>
@@ -93,44 +105,40 @@
         <h2>My skills</h2>
         <ul class="skills-list"></ul>
       </section>
-      <section class="projects">
-        <div id="projects" class="container">
-          <h2>Projects</h2>
-          <div class="projects-flex">
-            <div class="project-image"></div>
-            <div class="projects-list">
-              <img class="project-img" src="img/project.jpg" alt="project1" />
-            </div>
-            <div class="a-container container">
-              <li><a href="https://github.com/AyaDzhaparbekova/AyaPortfolio/blob/main/index.html" target="_blank"> HTML Project</a></li>
-              <li><a href="https://github.com/AyaDzhaparbekova/AyaPortfolio/blob/main/styles/style.css" target="_blank">My CSS Project</a></li>
-              <li><a href="https://github.com/AyaDzhaparbekova/AyaPortfolio/tree/main/js" target="_blank">My JavaScript Project</a></li>
-              <li>My API Project</li>
-              <li><a href="https://github.com/AyaDzhaparbekova/AyaPortfolio/blob/main/styles/media.css" target="_blank">My Responsive Design Project</a></li>
-            </div>
-          </div>
-        </div>
+      <section id="projects" class="projects-container">
+        <h2>Projects</h2>
+        <ul></ul>
       </section>
     </main>
-    <section id="messages" class="container">
-     <h2>Leave a Message</h2> 
-     <form name="leave_message">
-            <label for="usersName">Name:</label>
-            <input type="text" id="usersName" name="usersName" required>
-            <br>
-
-            <label for="usersEmail">Email:</label>
-            <input type="email" id="usersEmail" name="usersEmail" required>
-            <br>
-
-            <label for="usersMessage">Message:</label>
-            <textarea id="usersMessage" name="usersMessage" required></textarea>
-            <br>
-
-            <button type="submit">Submit</button>
-        </form>
-        <p id="confirmation" style="display:none; color: rgba(20, 95, 118, 0.474);">Thank you! Your message has been sent.</p>
+    <section id="leaveMessage" class="message-container">
+      <h2>Leave a Message</h2>
+      <form name="leave_message" class="messageForm">
+        <label for="usersName" class="messageLabel">User Name</label>
+        <br />
+        <input type="text" name="usersName" required />
+        <br />
+        <label for="email" class="messageLabel">Email Address</label>
+        <br />
+        <input type="email" name="email" required />
+        <br />
+        <label for="usersMessage" class="messageLabel">Leave a Message</label>
+        <br />
+        <textarea name="usersMessage" rows="8" cols="30px" required></textarea>
+        <br />
+        <button type="submit" id="submitButton">Submit</button>
+      </form>
+      <p
+        id="confirmation"
+        style="display: none; color: rgba(20, 95, 118, 0.474)"
+      >
+        Thank you! Your message has been sent.
+      </p>
     </section>
+    <section id="messages" class="remove-messages">
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
+
     <footer>
       <h2>Contacts</h2>
       <div class="connect-socials">
