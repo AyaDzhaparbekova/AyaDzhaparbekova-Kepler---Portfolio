@@ -36,6 +36,7 @@ themeLi.classList.add('theme-toggle-item');
 const themeToggle = document.createElement('button');
 themeToggle.id = 'themeToggle';
 themeToggle.title = 'Toggle Theme';
+
 themeToggle.innerHTML = `<i class="fa-solid fa-moon"></i>   Mode`;
 
 themeLi.appendChild(themeToggle);

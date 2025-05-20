@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+}
   body {
     font-family: 'Quicksand', sans-serif;
     background-color: rgb(240, 239, 237);
@@ -14,7 +14,6 @@
     padding: 0px 20px;
     box-sizing: border-box;
   }
-
   /* Section About Me */
   img {
     max-width: 300px;
@@ -221,9 +220,6 @@
   .dark-theme .navbar button {
     background-color: #5c5c62;
   }
-
-  }
-
 
   /* SKILLS SECTION */
   #skills {
