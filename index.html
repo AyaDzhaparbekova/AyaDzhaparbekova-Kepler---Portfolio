@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <title>Aya's Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="./styles/media.css" />
   </head>
   <!--GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,127 +12,147 @@
     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
     rel="stylesheet"
   />
-
+  <!-- FONTAWESOME -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
-
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="./styles/media.css" />
   <body>
     <main>
-      <section class="aboutMe">
+      <section id="aboutMe" class="container">
         <h1>Frontend Developer & UI/UX Designer</h1>
-        <h2>About me</h2><h3>Aya Dzhaparbekova</h3>
         <div class="main-about-flex">
           <div class="my-photo">
             <img src="img/myphoto.jpeg" alt="My photo" />
-             
           </div>
-          <div class="about" id="hero">
-            <div class="about-container">
-              <p>
-                I'm a web developer passionate about building reliable and
-                scalable sofware solutions. Proficient in JavaScript, HTML andd
-                CSS, and familiar with modern frameworks and tools. Experienced
-                in working with Git, version control workflow and collaborative
-                development practices. Constantly learning adapting to new
-                technologies to write clean, maintainable code and deliver
-                high-quality results.
-              </p>
-            </div>
+          <div class="about-container">
+            <h2>Aya Dzhaparbekova</h2>
+            <p>
+              I'm a web developer passionate about building reliable and
+              scalable sofware solutions. Proficient in JavaScript, HTML andd
+              CSS, and familiar with modern frameworks and tools. Experienced in
+              working with Git, version control workflow and collaborative
+              development practices. Constantly learning adapting to new
+              technologies to write clean, maintainable code and deliver
+              high-quality results.
+            </p>
+            <p>
+              Driven by a passion for discovering new programming languages and
+              continiously growing in the tech industry.
+            </p>
           </div>
         </div>
       </section>
-
       <nav class="navbar">
-        <div class="list flex">
-          <button class="theme"><span class="theme"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i></span></button>
-          
-          <button a href="#about">About</button>
-          <button class="nav">Experience</button>
-          <button class="nav">Projects</button>
-          <button class="nav">Skills</button>
-          <button class="nav">Contacts</button>
-        </div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <button><a href="#aboutMe">About</a></button>
+          </li>
+          <li>
+            <button><a href="#experience">Experience</a></button>
+          </li>
+          <li>
+            <button><a href="#skills">Skills</a></button>
+          </li>
+          <li>
+            <button><a href="#projects">Projects</a></button>
+          </li>
+          <li>
+            <button><a href="#messages">Contacts</a></button>
+          </li>
+      </ul>
       </nav>
 
-      <section class="experience-section">
+      <section id="experience" class="container">
         <h2>Experience</h2>
         <div class="experience-container">
           <div class="experience-box">
-            <h3>Web Developer</h3>
+            <h3>Teacher Coordinator - LSLC (2013-2016)</h3>
             <p>
-              Created responsive websites using HTML, CSS, JavaScript,
-              integrated APIs and optimized user experience for mobile and
-              desktop platforms.
+              Created and managed class schedules for multiple levels and
+              instructions.Collaborated with educaters to ensure curriculum
+              alignment and student progress. Developed teaching methodology and
+              structured learning programs.
             </p>
           </div>
           <div class="experience-box">
-            <h3>Personal Projects</h3>
+            <h3>Automotive Sales Agent (Wholesale) (2017-2019)</h3>
             <p>
-              Built full-page application for parents to track kid's growth
-              using GitHub, JavaScript, REST APIs and Responsive Design.
+              Managed the full acquisition process - from bidding and purchasing
+              to inspection and transportation. Analyzed pricing trends and
+              vehicle conditions to make profitable purchasing decisions. Built
+              and maintained relationship with dealerships to negotiate sales
+              and secure repeat business.
             </p>
           </div>
           <div class="experience-box">
-            <h3>Open Source Contributor</h3>
+            <h3>Automotive Sales Team Supervisor (2020-2023)</h3>
             <p>
-              Contributed to open source projects on GitHub. Worked with version
-              control, issue tracking, and collaborative development.
+              Led and motivated a team of sales representatives to achieve and
+              exceed monthly sales targets.Provided training, coaching and
+              performance feedback to improve team efficiency and product
+              knoledge.Ensured high levels of customer satisfaction through
+              strong communication and follow up processes. Analyzed market
+              trends and competitor activity to adjust sales tactics
+              accordingly.
             </p>
           </div>
         </div>
       </section>
-        <section id="skills">
-            <h2>My skills</h2>
-            <ul></ul>
-        </section>
-      <section class="projects">
-        <div class="projects-container">
-          <h2>Projects</h2>
-          <div class="projects-flex">
-            <div class="project-image"></div>
-            <div class="projects-list">
-              <img class="project-img" src="img/project.jpg" alt="project1" />
-            </div>
-            <div class="a-container">
-              <li>My HTML Project</li>
-              <li>My CSS Project</li>
-              <li>My JavaScript Project</li>
-              <li>My API Project</li>
-              <li>My Responsive Design Project</li>
-            </div>
-          </div>
-        </div>
+      <section id="skills" class="container">
+        <h2>My skills</h2>
+        <ul class="skills-list"></ul>
       </section>
-      <section class="connect">
-          <h2>Connect</h2>
-          <!-- <div class="connect-socials">
-            <a href="https://www.linkedin.com/in/aya-dzhaparbekova-27b5902a1/">
-              <i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/AyaDzhaparbekova"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://mail.google.com/mail/u/0/#inbox"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-          </div> -->
+      <section id="projects" class="projects-container">
+        <h2>Projects</h2>
+        <ul></ul>
       </section>
     </main>
+    <section id="leaveMessage" class="message-container">
+      <h2>Leave a Message</h2>
+      <form name="leave_message" class="messageForm">
+        <label for="usersName" class="messageLabel">User Name</label>
+        <br />
+        <input type="text" name="usersName" required />
+        <br />
+        <label for="email" class="messageLabel">Email Address</label>
+        <br />
+        <input type="email" name="email" required />
+        <br />
+        <label for="usersMessage" class="messageLabel">Leave a Message</label>
+        <br />
+        <textarea name="usersMessage" rows="8" cols="30px" required></textarea>
+        <br />
+        <button type="submit" id="submitButton">Submit</button>
+      </form>
+      <p
+        id="confirmation"
+        style="display: none; color: rgba(20, 95, 118, 0.474)"
+      >
+        Thank you! Your message has been sent.
+      </p>
+    </section>
+    <section id="messages" class="remove-messages">
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
+
     <footer>
-      <div class="footer-socials">
+      <h2>Contacts</h2>
+      <div class="connect-socials">
         <a href="https://www.linkedin.com/in/aya-dzhaparbekova-27b5902a1/">
           <i class="fa-brands fa-linkedin"></i
         ></a>
         <a href="https://github.com/AyaDzhaparbekova"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://mail.google.com/mail/u/0/#inbox"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
       </div>
-    
     </footer>
     <script src="js/index.js"></script>
   </body>
