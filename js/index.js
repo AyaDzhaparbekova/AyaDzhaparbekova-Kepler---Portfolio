@@ -118,3 +118,10 @@ fetch('https://api.github.com/users/AyaDzhaparbekova/repos')
   .catch(error => {
     console.error('An error occurred:', error);
   });  
+// hamburger menu for mobile
+  const hamburger = document.getElementById('hamburger')
+  const navLinks = document.getElementById('navLinks')
+
+  hamburger.addEventListener('click',() =>{
+    navLinks.classList.toggle('active')
+  });

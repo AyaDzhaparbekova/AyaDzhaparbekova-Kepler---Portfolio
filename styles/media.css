@@ -49,9 +49,24 @@
     justify-content: left;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
+#hamburger.hamburger{
+  padding: 10px;
 
+}
   .theme-toggle-item button {
-    font-size: 18px;
+    font-size: 15px;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    flex-direction: column;
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
   }
 
   #experience.container {
@@ -67,7 +82,7 @@
     padding-top: 15px;
   }
   .experience-box p {
-    font-size: 15px;
+    font-size: 12px;
     padding-bottom: 15px;
   }
   #skills.container {
@@ -120,7 +135,7 @@
     height: 50vh;
   }
   footer {
-    height: 15vh;
+    height: 35vh;
   }
   p {
     font-size: small;
