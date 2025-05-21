@@ -176,15 +176,15 @@
   nav li {
     list-style: none;
   }
-  .navbar button:active {
-    background-color: rgb(23, 22, 22);
+  .active {
+    background-color:  #426f8c;
+    border-radius: 15px;
+    padding: 5px;
   }
-  /* #nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  } */
+  .hidden {
+    display: none;
+  }
+
   nav a {
     text-decoration: none;
     color: #ebe8e5;
@@ -196,11 +196,7 @@
     background-color: none;
     display: none;
   }
-  /* .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-  } */
+
   .theme-toggle-item button {
     padding: 10px 20px;
     margin: 0 5px;
@@ -217,9 +213,16 @@
   .dark-theme .navbar {
     background-color: #d1ce74;
   }
+  .dark-theme .navbar a{
+    color: #070707;
+  } 
   .dark-theme .navbar button {
-    background-color: #5c5c62;
+    background-color: #d1ce74;
+    color: #070707;
   }
+  .dark-theme .active {
+    background-color: #d1ce74;
+    }
 
   /* SKILLS SECTION */
   #skills {
@@ -319,6 +322,7 @@
     border-radius: 15px;
     padding: 15px;
     margin-top: 10px;
+    background-color: none;
   }
 
   .messageForm,
@@ -328,11 +332,10 @@
     align-items: center;
     background-color: #cbcdce;
     border-radius: 5px;
+  
   }
-  .messageLabel{ 
-    background-color: none;
-  }
-  #messages ul {
+
+  .messages ul {
     display: grid;
     justify-content: center;
     padding-left: 0;
@@ -364,12 +367,12 @@
     color: #e0dfde;
   }
   .dark-theme .messageForm,
-  .messageLabel {
-    color: #e0dfde;
-    background-color: #767679;
-  }
+  /* .messageLabel {
+    color: #e0dfde; */
+    /* background-color: #767679; */
+  /* } */
   .dark-theme #submitButton {
-    background-color: #d1ce74;
+    background-color: #060607;
     color: #060607;
   }
 

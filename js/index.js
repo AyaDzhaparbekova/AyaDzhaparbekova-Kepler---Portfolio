@@ -122,7 +122,15 @@ fetch('https://api.github.com/users/AyaDzhaparbekova/repos')
 // hamburger menu for mobile
   const hamburger = document.getElementById('hamburger')
   const navLinks = document.getElementById('navLinks')
+  const links = navLinks.querySelectorAll('li');
 
   hamburger.addEventListener('click',() =>{
     navLinks.classList.toggle('active')
+     navLinks.classList.toggle('hidden');
+  });
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+     navLinks.classList.remove('active');
+     navLinks.classList.add('hidden');
+    });
   });

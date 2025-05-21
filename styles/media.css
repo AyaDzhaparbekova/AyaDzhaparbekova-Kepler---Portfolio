@@ -3,7 +3,7 @@
     height: 130vh;
   }
   footer {
-    height: 30vh;
+    height: 20vh;
   }
   .theme-toggle-item button {
     font-size: 14px;
@@ -26,16 +26,13 @@
   img {
     max-width: 250px;
   }
-  .container {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+
   .skills-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .navbar {
-    left: 85%;
-    top: 12%;
+    left: 90%;
+    top: 11%;
   }
 
   .navbar button {
@@ -49,10 +46,9 @@
     justify-content: left;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
-#hamburger.hamburger{
-  padding: 10px;
-
-}
+  #hamburger.hamburger {
+    padding: 10px;
+  }
   .theme-toggle-item button {
     font-size: 15px;
   }
@@ -114,11 +110,15 @@
     max-width: 200px;
   }
   footer {
-    height: 25vh;
+    height: 30vh;
   }
   footer p {
     font-size: small;
     color: black;
+  }
+  .connect-socials {
+    font-size: 50px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 465px) {
@@ -135,7 +135,7 @@
     height: 50vh;
   }
   footer {
-    height: 35vh;
+    height: 25vh;
   }
   p {
     font-size: small;
