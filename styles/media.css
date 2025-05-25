@@ -6,17 +6,18 @@
     height: 20vh;
   }
   .theme-toggle-item button {
-    font-size: 14px;
-  }
-  nav a {
     font-size: 15px;
   }
-  #skills.container {
-    height: 40vh;
-  }
-  #projects.projects-container {
-    height: 30vh;
-  }
+
+nav a {
+  font-size: 15px;
+}
+#skills.container {
+  height: 40vh;
+}
+#projects.projects-container {
+  height: 30vh;
+}
 }
 @media (max-width: 768px) {
   .main-about-flex {
@@ -50,7 +51,7 @@
     padding: 10px;
   }
   .theme-toggle-item button {
-    font-size: 15px;
+    font-size: 10px;
   }
   .hamburger {
     display: block;
@@ -112,8 +113,8 @@
   footer {
     height: 30vh;
   }
-  footer p {
-    font-size: small;
+  p {
+    font-size: large;
     color: black;
   }
   .connect-socials {
