@@ -14,7 +14,7 @@ const skills = [
   'GitHub',
   'UX/UI Design',
   'DOM',
-  'REST API'
+  'REST API',
 ];
 
 const skillsSection = document.getElementById('skills');
@@ -74,7 +74,7 @@ function handleSubmit(event) {
   const removeButton = document.createElement('button');
   removeButton.innerText = 'remove';
   removeButton.setAttribute('type', 'button');
-  removeButton.classList.add('remove-button'); 
+  removeButton.classList.add('remove-button');
   removeButton.addEventListener('click', handleRemoveButton);
 
   function handleRemoveButton() {
@@ -118,19 +118,19 @@ fetch('https://api.github.com/users/AyaDzhaparbekova/repos')
   })
   .catch(error => {
     console.error('An error occurred:', error);
-  });  
+  });
 // hamburger menu for mobile
-  const hamburger = document.getElementById('hamburger')
-  const navLinks = document.getElementById('navLinks')
-  const links = navLinks.querySelectorAll('li');
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+const links = navLinks.querySelectorAll('li');
 
-  hamburger.addEventListener('click',() =>{
-    navLinks.classList.toggle('active')
-     navLinks.classList.toggle('hidden');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  navLinks.classList.toggle('hidden');
+});
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    navLinks.classList.add('hidden');
   });
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-     navLinks.classList.remove('active');
-     navLinks.classList.add('hidden');
-    });
-  });
+});

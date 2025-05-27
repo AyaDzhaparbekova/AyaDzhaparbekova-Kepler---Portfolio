@@ -1,23 +1,20 @@
 @media (max-width: 1024px) {
   #experience.container {
-    height: 130vh;
+    height: 80vh;
   }
   footer {
-    height: 20vh;
+    height: 25vh;
   }
   .theme-toggle-item button {
-    font-size: 15px;
+    font-size: 10px;
   }
 
-nav a {
-  font-size: 15px;
-}
-#skills.container {
-  height: 40vh;
-}
-#projects.projects-container {
-  height: 30vh;
-}
+  nav a {
+    font-size: 15px;
+  }
+  #skills.container {
+    height: 40vh;
+  }
 }
 @media (max-width: 768px) {
   .main-about-flex {
@@ -51,7 +48,7 @@ nav a {
     padding: 10px;
   }
   .theme-toggle-item button {
-    font-size: 10px;
+    font-size: 15px;
   }
   .hamburger {
     display: block;
@@ -67,7 +64,7 @@ nav a {
   }
 
   #experience.container {
-    height: 90vh;
+    height: 100vh;
   }
   .experience-box {
     flex-direction: row;
@@ -96,19 +93,8 @@ nav a {
   .skills-list li {
     font-size: small;
   }
-  #projects .container {
-    height: 80vh;
-  }
-  .projects-flex {
-    flex-direction: column;
-    text-align: center;
-    margin-top: -60px;
-  }
-  .projects-flex li {
-    font-size: small;
-  }
-  .project-img {
-    max-width: 200px;
+  #projects {
+    height: 30vh;
   }
   footer {
     height: 30vh;
@@ -123,22 +109,29 @@ nav a {
   }
 }
 @media (max-width: 465px) {
+  .hamburger {
+    font-size: 10px;
+    min-width: 8px;
+  }
   .experience-box {
     flex-direction: row;
     gap: 5px;
     text-align: center;
   }
   #experience.container {
-    height: 135vh;
+    height: 90vh;
   }
   #skills.container {
     align-items: center;
     height: 50vh;
   }
-  footer {
-    height: 25vh;
-  }
-  p {
-    font-size: small;
-  }
+}
+#projects li {
+  margin-bottom: 5px;
+}
+p {
+  font-size: 15px;
+}
+#leaveMessage {
+  margin-top: 60px;
 }

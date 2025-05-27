@@ -36,7 +36,7 @@ img {
 
 p {
   padding-top: 15px;
-  font-size: 1.2rem;
+  font-size: 20px;
   line-height: 1.5;
   color: #1a1a1a;
   font-family: 'Quicksand', sans-serif;
@@ -282,7 +282,8 @@ ul.skills-list {
   color: rgb(4, 4, 4);
   border-radius: 15px;
   text-align: center;
-  height: 25vh;
+  padding: 15px;
+  
 }
 #projects li {
   list-style: none;
@@ -290,14 +291,17 @@ ul.skills-list {
   background-color: #e0dfde;
   border-radius: 5px;
   padding: 5px;
-  margin: 8px;
+
 }
 #projects ul :hover {
   transform: scale(1);
   background-color: #989797;
 }
+#projects ul{
+margin-bottom: 10px;
+}
 #projects h2 {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 #projects a {
@@ -415,7 +419,7 @@ footer {
   border-radius: 15px;
   width: 100%;
   text-align: center;
-  height: 35vh;
+  height: 32vh;
 }
 footer a {
   color: #426f8c;
@@ -430,7 +434,7 @@ footer h2 {
   padding: 10px;
 }
 footer p {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 /* Dark Mode for FOOTER SECTION  */
