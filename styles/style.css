@@ -36,7 +36,6 @@ img {
 
 p {
   padding-top: 15px;
-  font-size: 20px;
   line-height: 1.5;
   color: #1a1a1a;
   font-family: 'Quicksand', sans-serif;
@@ -56,6 +55,9 @@ h2 {
   text-align: center;
   margin-bottom: 15px;
   margin-top: 10px;
+}
+h3 {
+  padding: 15px;
 }
 
 .my-photo img {
@@ -198,7 +200,7 @@ nav a {
 }
 
 .theme-toggle-item button {
-  padding: 14px 20px;
+  padding: 10px 20px;
   margin: 0 5px;
   justify-content: center;
   min-width: 100px;
@@ -207,7 +209,7 @@ nav a {
   color: #ebe8e5;
   cursor: pointer;
   font-family: 'Quicksand', sans-serif;
-  font-size: 15px;
+  font-size: 20px;
 }
 /* Dark Mode for NAVBAR */
 .dark-theme .navbar {
@@ -222,6 +224,9 @@ nav a {
 }
 .dark-theme .active {
   background-color: #d1ce74;
+}
+.dark-theme .theme-toggle-item button {
+  font-size: 20px;
 }
 
 /* SKILLS SECTION */
@@ -282,26 +287,22 @@ ul.skills-list {
   color: rgb(4, 4, 4);
   border-radius: 15px;
   text-align: center;
-  padding: 15px;
-  
+  height: 40vh;
 }
 #projects li {
   list-style: none;
   border: 1px solid #1d1e20;
   background-color: #e0dfde;
   border-radius: 5px;
-  padding: 5px;
-
+  padding: 2px;
+  margin: 10px;
 }
 #projects ul :hover {
   transform: scale(1);
   background-color: #989797;
 }
-#projects ul{
-margin-bottom: 10px;
-}
 #projects h2 {
-  padding-top: 15px;
+  padding: 20px;
 }
 
 #projects a {
@@ -360,8 +361,16 @@ margin-bottom: 10px;
 }
 p#confirmation {
   text-align: center;
-  color: #060607;
 }
+span {
+  align-items: center;
+}
+a {
+  color: #070707;
+  align-items: center;
+  text-decoration: none;
+}
+
 /* Dark Mode for LEAVE A MESSAGE SECTION  */
 .dark-theme #leaveMessage {
   background-color: #060607;
@@ -407,10 +416,9 @@ button.remove-button {
   color: #ebe5e5;
 }
 .dark-theme #submitButton {
- background-color: #d1ce74;
+  background-color: #d1ce74;
   color: #060607;
 }
- 
 
 /* FOOTER SECTION  */
 footer {
@@ -434,13 +442,13 @@ footer h2 {
   padding: 10px;
 }
 footer p {
-  padding-top: 50px;
+  padding-top: 65px;
 }
 
 /* Dark Mode for FOOTER SECTION  */
 .dark-theme footer {
   background-color: #060607;
-  ;
+  height: 28vh;
 }
 .dark-theme footer h2 {
   color: #e0dfde;

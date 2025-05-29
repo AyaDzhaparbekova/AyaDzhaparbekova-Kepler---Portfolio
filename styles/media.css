@@ -1,14 +1,30 @@
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   #experience.container {
-    height: 80vh;
-  }
-  footer {
-    height: 25vh;
+    height: 120vh;
   }
   .theme-toggle-item button {
-    font-size: 10px;
+    font-size: 15px;
   }
-
+  .dark-theme .theme-toggle-item button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  #experience.container {
+    height: 110vh;
+  }
+  footer {
+    height: 40vh;
+  }
+  .theme-toggle-item button {
+    font-size: 14px;
+  }
+  .dark-theme .theme-toggle-item button {
+    font-size: 14px;
+  }
+  #leaveMessage {
+    margin-top: 10px;
+  }
   nav a {
     font-size: 15px;
   }
@@ -64,7 +80,7 @@
   }
 
   #experience.container {
-    height: 100vh;
+    height: 130vh;
   }
   .experience-box {
     flex-direction: row;
@@ -72,7 +88,7 @@
     text-align: center;
   }
   .experience-box h3 {
-    font-size: small;
+    font-size: 15px;
     padding-top: 15px;
   }
   .experience-box p {
@@ -91,16 +107,14 @@
     list-style-type: none;
   }
   .skills-list li {
-    font-size: small;
+    font-size: 15px;
   }
-  #projects {
-    height: 30vh;
-  }
+
   footer {
-    height: 30vh;
+    height: 28vh;
   }
   p {
-    font-size: large;
+    font-size: 20px;
     color: black;
   }
   .connect-socials {
@@ -110,8 +124,11 @@
 }
 @media (max-width: 465px) {
   .hamburger {
-    font-size: 10px;
+    font-size: 15px;
     min-width: 8px;
+  }
+  .theme-toggle-item button {
+    font-size: 15px;
   }
   .experience-box {
     flex-direction: row;
@@ -119,19 +136,20 @@
     text-align: center;
   }
   #experience.container {
-    height: 90vh;
+    height: 160vh;
   }
   #skills.container {
     align-items: center;
     height: 50vh;
   }
-}
-#projects li {
-  margin-bottom: 5px;
-}
-p {
-  font-size: 15px;
-}
-#leaveMessage {
-  margin-top: 60px;
+  p {
+    font-size: 15px;
+    color: black;
+  }
+  #leaveMessage {
+    margin-top: 20px;
+  }
+  footer {
+    height: 35vh;
+  }
 }
